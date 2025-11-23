@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenByte - Responsible Tech for a Greener Planet</title>
+    <!-- This part sets up the page basics, like the title and how it looks on different screens. It connects to the whole website by giving it a name and making sure it works on phones and computers. -->
+    <style>
+      /* This section adds colors and looks to the website. It connects to the HTML parts below by making them look nice with green colors for an eco-friendly feel. */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e8f5e8; /* Light green background for a fresh, environmental theme */
+        color: #2e7d32; /* Dark green text for readability and theme consistency */
+        line-height: 1.6;
+      }
+      header {
+        background-color: #4caf50; /* Medium green header for prominence */
+        color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .img img {
+        width: 60px;
+        height: auto;
+        margin-right: 1px;
+      }
+      .title {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      nav {
+        display: flex;
+        gap: 1rem;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem;
+        border-radius: 4px;
+        transition: all 0.3s; /* Smooth change when hovering */
+        border: 1px solid transparent; /* Invisible border to prepare for hover effect */
+      }
+      nav a:hover {
+        background-color: #388e3c; /* Darker green background on hover */
+        color: #e8f5e8; /* Lighter green text on hover for contrast */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for a button-like raised effect on hover */
+        transform: translateY(
+          -2px
+        ); /* Slight upward movement on hover to simulate button press */
+      }
+      section {
+        padding: 2rem;
+        margin: 1rem auto;
+        max-width: 800px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #1b5e20; /* Deep green for headings */
+      }
+      ul {
+        list-style-type: disc;
+        margin-left: 1rem;
+      }
+      .highlight {
+        background-color: #c8e6c9; /* Light green highlight for emphasis */
+        padding: 0.5rem;
+        border-radius: 4px;
+      }
+      .more-info-btn {
+        background-color: #4caf50; /* Green button matching the theme */
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: background-color 0.3s;
+      }
+      .more-info-btn:hover {
+        background-color: #388e3c; /* Darker green on hover */
+      }
+      .more-info {
+        display: none; /* Hidden by default */
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: #f1f8e9; /* Very light green background for expanded content */
+        border-radius: 4px;
+        border-left: 4px solid #4caf50; /* Green left border for emphasis */
+      }
+      footer {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The header section contains the main title "GreenByte" on the left and the navigator on the right. The navigator includes links to Home, About Us, and Contact. These links are set to scroll to sections within the page (using anchors) as per the instruction to direct links to the description content. Comments are added for clarity. The nav links now have enhanced hover effects to make them feel more interactive like buttons. This header connects to the sections below by letting users jump to different parts of the page. -->
+    <header>
+      <div class="title">
+        <div class="img"><img src="download.png" alt="" /></div>
+        GreenByte
+      </div>
+      <!-- Main title on the left side of the header, representing the website's name focused on eco-friendly tech education. This title connects to the whole site by showing what the page is about. -->
+      <nav>
+        <a href="#home">Home</a>
+        <!-- L>ink to the Home section, which contains the main content from the description. On hover, it changes background, text color, adds shadow, and moves slightly up for a button-like effect. This link connects to the Home section below by taking users there when clicked. -->
+        <a href="#about">About Us</a>
+        <!-- Link to the About Us section, summarizing the website's purpose. Same hover effects apply. This link connects to the About Us section below. -->
+        <a href="#contact">Contact</a>
+        <!-- Link to the Contact section for user inquiries. Same hover effects apply. This link connects to the Contact section below. -->
+      </nav>
+    </header>
+
+    <!-- Main content sections based on the provided description. Each section corresponds to parts of the description, with headings and lists for clarity. The Home section includes the three ways for responsible consumption and awareness. Added "Click for more information" buttons after each "Why It Matters" section to expand additional details. These sections connect to the header links by having IDs that match the links, so users can jump here. -->
+    <section id="home">
+      <h1>Welcome to GreenByte 🔋</h1>
+      <p>
+        Our website is to educate individual for a proper use to handle waste of
+        technology and value to a better way to managed.
+      </p>
+
+      <br /><br />
+
+      <h2>Main Goal: Responsible Consumption and Awareness 🏆</h2>
+      <p>
+        <strong>Responsible Consumption:</strong> Using technology and
+        electronic products in a way that reduces waste, saves energy, and
+        protects the environment.
+      </p>
+      <p>
+        <strong>Awareness:</strong> Educating people about the effects of
+        e-waste, overconsumption, and how their choices impact the planet.
+      </p>
+
+      <br /><br />
+
+      <h2>Three Ways for Responsible Consumption and Awareness</h2>
+
+      <h3>1. Reducing E-Waste ♻️</h3>
+      <p>
+        E-waste refers to broken or unused devices like old phones, laptops,
+        monitors, keyboards, mice, etc. We need to reduce e-waste because it's
+        toxic and shouldn't be thrown away carelessly. We'll teach you how to
+        reduce it.
+      </p>
+      <ul>
+        <li>
+          <strong>Repair instead of replace:</strong> Fix minor problems (e.g.,
+          battery replacement, screen repair) instead of buying new devices. As
+          IT folks, we can handle this!
+        </li>
+        <li>
+          <strong>Reuse and donate:</strong> Give old but working gadgets to
+          family, friends, schools, or communities. Share the generosity!
+        </li>
+        <li>
+          <strong>Recycle properly:</strong> Drop devices in e-waste collection
+          centers instead of regular trash. (As mentioned, there are specific
+          places for batteries and such.)
+        </li>
+        <li>
+          <strong>Buy durable devices:</strong> Choose gadgets with longer
+          lifespans and good repairability. Avoid cheap scams.
+        </li>
+        <li>
+          <strong>Avoid upgrading too often:</strong> Don’t buy new phones
+          yearly just because of trends.
+        </li>
+      </ul>
+      <p class="highlight">
+        <strong>Why It Matters:</strong> E-waste is the fastest-growing waste in
+        the world. When electronics break down in landfills, toxic materials
+        leak into soil and water. Reducing e-waste protects people, animals, and
+        the planet.
+      </p>
+      <button class="more-info-btn" onclick="toggleInfo('ewaste-more')">
+        Click for more information
+      </button>
+      <!-- Button to toggle additional details on e-waste. This button connects to the JavaScript code below by calling a function when clicked to show or hide extra info. -->
+      <div id="ewaste-more" class="more-info">
+        <p>
+          Did you know? Globally, about 50 million tons of e-waste are generated
+          annually. In the Philippines, improper disposal leads to health risks
+          like lead poisoning. By repairing and recycling, we can recover
+          valuable materials like gold and copper from old devices, reducing the
+          need for mining.
+        </p>
+      </div>
+
+      <h3>2. Promoting Green IT Practices 🎯</h3>
+      <p>
+        Green IT means using technology in ways that reduce environmental
+        impact.
+      </p>
+      <ul>
+        <li>
+          <strong>Energy-efficient hardware:</strong> Use laptops, servers, and
+          devices that consume less power.
+        </li>
+        <li>
+          <strong>Cloud storage instead of physical storage:</strong> Reduces
+          the need for many hardware devices (e.g., like TeraBox).
+        </li>
+        <li>
+          <strong>Using power-saving features:</strong> Such as sleep mode,
+          auto-brightness, and automatic shutdown.
+        </li>
+        <li>
+          <strong>Digital documents instead of printing:</strong> Less ink and
+          paper waste. Soft copies are better!
+        </li>
+        <li>
+          <strong>Virtual meetings (Zoom, Teams):</strong> Reduces travel, fuel
+          consumption, and carbon emissions.
+        </li>
+      </ul>
+      <p class="highlight">
+        <strong>Why It Matters:</strong> Green IT helps reduce electricity
+        usage, lowers carbon footprint, and creates more sustainable ways to use
+        technology in homes, schools, and companies.
+      </p>
+      <button class="more-info-btn" onclick="toggleInfo('greenit-more')">
+        Click for more information
+      </button>
+      <!-- Button to toggle additional details on Green IT. This button connects to the JavaScript code below by calling a function when clicked. -->
+      <div id="greenit-more" class="more-info">
+        <p>
+          Fun fact: Data centers worldwide consume about 1% of global
+          electricity. Switching to virtual meetings can save up to 90% in
+          travel emissions. In the Philippines, adopting Green IT can cut energy
+          costs for businesses by 20-30% while supporting renewable energy
+          initiatives.
+        </p>
+      </div>
+
+      <h3>3. Supporting Digital Sustainability 🤝</h3>
+      <p>
+        Digital Sustainability focuses on using technology responsibly for
+        long-term efficiency, ethics, and environmental friendliness.
+      </p>
+      <ul>
+        <li>
+          <strong>Storing files efficiently:</strong> Avoid unnecessary data to
+          reduce server energy usage. Delete those bold files!
+        </li>
+        <li>
+          <strong>Using sustainable websites:</strong> Websites optimized to use
+          less power and load faster (e.g., efficient browsers like Chrome).
+        </li>
+        <li>
+          <strong>Choosing energy-efficient data centers:</strong> Companies
+          using renewable energy for servers.
+        </li>
+        <li>
+          <strong>Educating users about eco-tech:</strong> Teaching others about
+          saving energy and responsible digital behavior (ties into Green IT
+          practices).
+        </li>
+        <li>
+          <strong>Supporting green tech companies:</strong> Buy from brands that
+          use recycled materials or reduce carbon emissions.
+        </li>
+      </ul>
+      <p class="highlight">
+        <strong>Why It Matters:</strong> The internet uses huge amounts of
+        energy. Data centers require massive electricity. Digital sustainability
+        ensures technology grows without harming the planet.
+      </p>
+      <button class="more-info-btn" onclick="toggleInfo('sustainability-more')">
+        Click for more information
+      </button>
+      <!-- Button to toggle additional details on Digital Sustainability. This button connects to the JavaScript code below by calling a function when clicked. -->
+      <div id="sustainability-more" class="more-info">
+        <p>
+          Insight: The average website loads 2.5 MB of data, contributing to
+          carbon emissions. Sustainable websites use less bandwidth. Supporting
+          companies like those powered by solar energy helps achieve net-zero
+          goals. In education, teaching digital literacy can empower users to
+          make eco-friendly choices online.
+        </p>
+      </div>
+
+      <br />
+
+      <h2>Website Features Suggestions 💡</h2>
+      <p>
+        In the community section (like "GreenByte Community"), we can add tasks.
+        When users complete tasks, they earn badges or achievements to make the
+        site more engaging and entertaining. Every digital action, like reducing
+        e-waste or using power-saving features, contributes to positive change.
+        Every click on our site teaches something new, making it a tool for
+        environmental impact.
+      </p>
+    </section>
+
+    <section id="SDG 12">
+      `
+      <h2>SDG 12</h2>
+      <p>
+        "Responsible Consumption and Production," is a UN goal focused on
+        establishing sustainable patterns of consumption and production to
+        ensure efficient use of natural resources and reduce waste. It aims to
+        decouple economic growth from environmental degradation by promoting
+        resource efficiency, waste reduction through recycling and reuse, and
+        sustainable management of chemicals and resources throughout their
+        lifecycle.
+      </p>
+
+      <br />
+
+      <h2>Why is SDG 12 related to Greenbyte</h2>
+      <p>
+        Our website is inspired by this goal, when we were picking the goal for
+        our project we've all agreed to pick SDG 12 but this goal is a broad
+        topic and covers everything that affects it in the environment and
+        because we need to make a website that is related to our course which is
+        BSIT (Bachelor of Science Major in Information Technology) we need to
+        focus more on the relationship of technologies to environment and that's
+        why we've come up with the idea of "Greenbyte" wherein we will encourage
+        and educate people to use electrical and electronic components and
+        hardware components in a way that it will not only benefits us but also
+        the environment and not harm or damage it and we will make this come
+        true by this website we built but how are we gonna do that?
+      </p>
+
+      <br />
+    </section>
+
+    <section id="about">
+      <h3>About Us</h3>
+      <p>
+        GreenByte is dedicated to promoting responsible technology use for a
+        sustainable future. We aim to educate and inspire through awareness and
+        practical tips on reducing e-waste, adopting green IT, and supporting
+        digital sustainability.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h4>Contact Us</h4>
+      <p>
+        For suggestions , or to support, reach out to us at
+        <li>GreenByte9003@gmail.com</li>
+        Follow us on social media
+        <li>Greenerteam9003</li>
+        Let's build a greener action for greater good.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 GreenByte. "Turning every click into change"</p>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling to sections when nav links are clicked, and for toggling the "more information" sections. This enhances user experience without reloading the page. This code connects to the HTML elements above, like the nav links and buttons, by making them work when clicked. -->
+    <script>
+      // Function to handle smooth scrolling for navigation links. This connects to the nav links in the header by making them scroll to the right section when clicked.
+      document.querySelectorAll("nav a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault(); // Stop the normal link action
+          const targetId = this.getAttribute("href").substring(1); // Get the section name from the link
+          const targetSection = document.getElementById(targetId); // Find the section on the page
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" }); // Scroll smoothly to that section
+          }
+        });
+      });
+
+      // Function to toggle visibility of "more information" sections. This connects to the buttons in the Home section by showing or hiding extra details when a button is clicked.
+      function toggleInfo(id) {
+        const element = document.getElementById(id); // Find the hidden info section
+        if (element.style.display === "none" || element.style.display === "") {
+          element.style.display = "block"; // Show the extra information
+        } else {
+          element.style.display = "none"; // Hide the extra information
+        }
+      }
+    </script>
+  </body>
+</html>
